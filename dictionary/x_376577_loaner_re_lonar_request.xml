@@ -18,6 +18,7 @@
                 <element inactive_on_update="false" label="Projector" sequence="2" value="cmdb_ci_projector"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="other" type="string"/>
         <element label="Requested for" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Start date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Location to be used" max_length="40" name="u_string_6" type="string"/>
