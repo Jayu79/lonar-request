@@ -13,12 +13,12 @@
         <on_load>true</on_load>
         <order>100</order>
         <reverse_if_false>true</reverse_if_false>
-        <run_scripts>false</run_scripts>
+        <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
-
+	g_form.hideAllFieldMsgs();
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-
+	g_form.showFieldMsg('other','Where will you pickup the loaner?','info');
 }]]></script_true>
         <set_values/>
         <short_description>Make other field visible and Mandatory - Loaner Request</short_description>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b590915adb18401017bd64d748961993</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Make other field visible and Mandatory - Loaner Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Loaner Request" source="x_376577_loaner_re">2eb87215db10001017bd64d74896193e</sys_package>
@@ -36,9 +36,9 @@
         <sys_scope display_value="Loaner Request">2eb87215db10001017bd64d74896193e</sys_scope>
         <sys_update_name>sys_ui_policy_b590915adb18401017bd64d748961993</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-10-07 03:23:33</sys_updated_on>
+        <sys_updated_on>2019-10-07 04:51:22</sys_updated_on>
         <table>x_376577_loaner_re_lonar_request</table>
-        <ui_type>0</ui_type>
+        <ui_type>10</ui_type>
         <view/>
     </sys_ui_policy>
 </record_update>
